@@ -1,4 +1,11 @@
 {
+    "preset": ["@babel/preset-env"]
+}
+
+
+
+
+{
     "extends": ["airbnb-base"],
     "env": {
         "jest":true,

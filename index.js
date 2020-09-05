@@ -1,7 +1,7 @@
 import PKG from './package.json';
 
-const { name, version } = PKG;
+const { name, version, description, main, repository, author, license  } = PKG;
 
 
 
-console.log( `${name} ${version}` );
+console.log( `${description} ${author}` );

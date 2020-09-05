@@ -17,7 +17,7 @@
     "nodemon": "^2.0.4"
   },
 
-  "script": {
+  "scripts": {
     "start": "babel-node index.js"
   }
 }
