@@ -26,7 +26,7 @@ describe('Blockchain', () => {
         expect(blockchain.blocks.length).toEqual(2);
     });
 
-    // Who knows what the error is
+    // Who the fuck knows what the error is
     it('Prueba de reemplazo de cadena con otra cadena válida', () => {
         blockchainB.addBlock('bl4ck-1');
         blockchain.replace(blockchainB.blocks);

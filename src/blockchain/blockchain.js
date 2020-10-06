@@ -1,4 +1,5 @@
 import Block from './block';
+import validate from './modules/validate';
 
 class Blockchain {
     constructor() {
