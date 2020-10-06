@@ -14,6 +14,19 @@ class Blockchain {
 
         return block;
     }
+
+    replace(newBlocks = []) {
+        if (newBlocks.length < this.blocks.length) throw Error('La cadena recibida no tiene la longitud correcta.');
+        try {
+          validate(newBlocks);
+        } catch (error) {
+          throw Error('Cadena recibida inválida');
+        }
+    
+        this.blocks = newBlocks;
+    
+        return this.blocks;
+      }
 }
 
 export default Blockchain;
