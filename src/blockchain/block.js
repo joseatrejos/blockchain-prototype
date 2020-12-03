@@ -31,8 +31,8 @@ class Block {
         return new this(timestamp, previousHash, hash, data, nonce);
     }
 
-    static hash(timestamp, previousHash, data) {
-        return SHA256(`${timestamp}${previousHash}${data}`).toString();
+    static hash(timestamp, previousHash, data, nonce) {
+        return SHA256(`${timestamp}${previousHash}${data}${nonce}`).toString();
     }
 
     toString() {
